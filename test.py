@@ -24,20 +24,20 @@ if "started" not in st.session_state:
         st.session_state.started = True
         st.session_state.img_index = 0
         main_images = [
-            "tests/data_compressed/red-zeppelin-egzWylxCy0o-unsplash.jpg",
-            "tests/data_compressed/red-zeppelin-HwdxtOgUbe0-unsplash.jpg",
-            "tests/data_compressed/red-zeppelin-KgMvud4m2Ao-unsplash.jpg",
-            "tests/data_compressed/sergei-gussev-aJw0Q8F861Q-unsplash.jpg",
-            "tests/data_compressed/thu-n-minh-m18gG7B-Bn4-unsplash.jpg",
-            "tests/data_compressed/michael-douglas-6K4yFEdOjcw-unsplash.jpg",
-            "tests/data_compressed/daniel-twal-LmDZNJVxjlA-unsplash.jpg",
-            "tests/data_compressed/kir-shu-v0priul9iJ8-unsplash.jpg",
-            "tests/data_compressed/simi-iluyomade-Wq2hWoaSBtY-unsplash.jpg",
-            "tests/data_compressed/jack-delulio-7PCH0uapixc-unsplash.jpg",
+            "data_compressed/red-zeppelin-egzWylxCy0o-unsplash.jpg",
+            "data_compressed/red-zeppelin-HwdxtOgUbe0-unsplash.jpg",
+            "data_compressed/red-zeppelin-KgMvud4m2Ao-unsplash.jpg",
+            "data_compressed/sergei-gussev-aJw0Q8F861Q-unsplash.jpg",
+            "data_compressed/thu-n-minh-m18gG7B-Bn4-unsplash.jpg",
+            "data_compressed/michael-douglas-6K4yFEdOjcw-unsplash.jpg",
+            "data_compressed/daniel-twal-LmDZNJVxjlA-unsplash.jpg",
+            "data_compressed/kir-shu-v0priul9iJ8-unsplash.jpg",
+            "data_compressed/simi-iluyomade-Wq2hWoaSBtY-unsplash.jpg",
+            "data_compressed/jack-delulio-7PCH0uapixc-unsplash.jpg",
         ]
         shuffled = main_images.copy()
         random.shuffle(shuffled)
-        st.session_state.shuffled_images = ["tests/1_compressed.jpg"] + shuffled
+        st.session_state.shuffled_images = ["1_compressed.jpg"] + shuffled
         st.rerun()
     st.stop()
 
