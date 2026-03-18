@@ -4,6 +4,14 @@ from streamlit_drawable_canvas import st_canvas
 import pandas as pd
 import os
 import random
+import io
+import base64
+
+def img_to_base64(img):
+    buffered = io.BytesIO()
+    img.save(buffered, format="PNG")
+    return base64.b64encode(buffered.getvalue()).decode()
+
 
 st.set_page_config(page_title="風景写真アンケート", layout="wide")
 st.title("風景写真アンケート")
